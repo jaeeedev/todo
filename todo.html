@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/7cde33c3cd.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>todolist</title>
+  </head>
+
+  <body>
+    <header>
+      <h1>checklist.</h1>
+    </header>
+
+    <div class="wrapper">
+      <form class="add" autocomplete="off">
+        <input
+          required
+          type="text"
+          oninvalid="this.setCustomValidity('텍스트를 입력해주세요.')"
+          oninput="setCustomValidity('')"
+          placeholder="We are what we repeatedly do"
+          id="text"
+          class="add_text"
+        />
+        <button type="submit" id="btn">
+          <i class="fa-solid fa-plus"></i>
+        </button>
+      </form>
+      <div id="writearea"></div>
+    </div>
+
+    <script src="todo.js"></script>
+  </body>
+</html>

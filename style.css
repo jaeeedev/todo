@@ -1,0 +1,221 @@
+@import url("https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css");
+
+:root {
+  --black: rgb(59, 54, 54);
+  --red: rgb(255, 25, 25);
+}
+
+* {
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+}
+
+header {
+  padding-top: 3rem;
+}
+
+.wrapper {
+  position: relative;
+  width: 90vw;
+  height: 700px;
+  padding: 80px;
+  overflow-y: auto;
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+.wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+.add {
+}
+
+.wrapper form {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 50px;
+}
+
+.add_text {
+  padding: 20px;
+  border: none;
+  border-radius: 3rem;
+  margin: 1rem 0.5rem 3rem 0;
+  background: transparent;
+  background: #f3f3f3;
+  margin: 0;
+  flex: 1;
+  justify-content: space-between;
+  font-size: 16px;
+}
+
+.add_text:focus {
+  outline: none;
+}
+
+input::placeholder {
+  color: #bbb;
+  letter-spacing: 0.5px;
+}
+
+#btn {
+  font-family: "NanumSquare";
+  font-weight: 800;
+  font-size: 1rem;
+  transform: rotate(-0.03deg);
+  background: transparent;
+  border-radius: 30px;
+  padding: 15px 18px;
+  cursor: pointer;
+  border: none;
+  background: blue;
+  color: white;
+}
+
+#btn:hover {
+  background: rgb(0, 0, 187);
+  color: #fff;
+}
+
+ul {
+  width: 100%;
+  padding: 0;
+}
+.checkbox {
+  width: 1rem;
+  margin-right: 1.2rem;
+}
+
+h1 {
+  width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  color: blue;
+  font-size: 4.5rem;
+  font-family: "Poppins", sans-serif;
+  text-transform: capitalize;
+  cursor: default;
+}
+
+#writearea::-webkit-scrollbar {
+  display: none;
+}
+
+#writearea {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.todo_li {
+  display: flex;
+  position: relative;
+  font-family: "NanumSquare";
+  font-weight: 700;
+  font-size: 1.2rem;
+  background: #f3f3f3;
+  border-radius: 1rem;
+  margin-bottom: 20px;
+  padding: 20px;
+  transition: all 0.4s;
+  cursor: default;
+}
+
+.mod_confirm,
+.mod_cancel,
+.more {
+  display: none;
+  padding: 10px;
+  background: transparent;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.3s;
+  border-radius: 50%;
+}
+
+.mod_confirm:hover {
+  color: blue;
+}
+.mod_cancel:hover {
+  color: #999;
+}
+
+[show="true"] {
+  display: inline-block;
+}
+
+.todo_text {
+  text-align: start;
+  margin-bottom: 5px;
+  margin-right: 60px;
+  padding: 8px;
+  padding-left: 0;
+  line-height: 1.4;
+}
+
+.todo_text[checked="true"] {
+  color: #ccc;
+}
+
+.todo_text[contenteditable="true"] {
+  padding-left: 5px;
+  border: 2px solid blue;
+  border-radius: 1rem;
+}
+.todo_text[contenteditable="true"]:focus {
+  outline: none;
+}
+
+.date_info {
+  font-size: 14px;
+  color: #999;
+  text-align: start;
+}
+
+.more_box {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  cursor: pointer;
+}
+
+.menus {
+  display: none;
+  width: 80px;
+  position: absolute;
+  bottom: -50px;
+  left: 20px;
+  background: white;
+  border-radius: 1rem;
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.menus.on {
+  display: block;
+}
+
+.menus span {
+  display: block;
+  padding: 10px 5px;
+  transition: all 0.3s;
+  font-size: 16px;
+  transform: rotate(0.04deg);
+}
+
+.menus span:hover {
+  background: #f3f3f3;
+}
