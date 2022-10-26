@@ -3,7 +3,7 @@
 ![todoshow](https://user-images.githubusercontent.com/72128840/196485279-e6f1954f-75d5-4004-9d5d-b18e803d50a5.gif)
 
 
-[바로가기] (https://jaeeedev.github.io/todo/)
+[바로가기](https://jaeeedev.github.io/todo/)
 
 ## 개요
 자바스크립트 기초 학습 목적으로 제작했던 투두리스트입니다.
