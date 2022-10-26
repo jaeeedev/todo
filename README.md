@@ -3,7 +3,7 @@
 ![todoshow](https://user-images.githubusercontent.com/72128840/196485279-e6f1954f-75d5-4004-9d5d-b18e803d50a5.gif)
 
 
-**바로가기** https://jaeeedev.github.io/todo/
+[바로가기] (https://jaeeedev.github.io/todo/)
 
 ## 개요
 자바스크립트 기초 학습 목적으로 제작했던 투두리스트입니다.
@@ -33,5 +33,3 @@ contenteditable 이라는 속성을 처음 알고 그 위치에서 직접 텍스
 편의성이나 속성의 특징에 대해 더 깊게 고민하지 않고 무작정 코드를 짜면 안된다는 뼈저린 교훈을 얻게 되었습니다.
 하지만 자바스크립트 문법에 익숙해질 수 있었고 직접 코드를 통해 사용할 수 있는 프로그램을 만들었다는 것이 뿌듯했습니다.
 
-
-여담으로 we are what we repeatedly do 는 제가 좋아하는 문장입니다.
